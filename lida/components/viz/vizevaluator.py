@@ -39,7 +39,7 @@ class VizEvaluator(object):
 
         messages = [
             {"role": "system", "content": system_prompt},
-            {"role": "assistant",
+            {"role": "user",
              "content": f"Generate an evaluation given the goal and code below in {library}. The specified goal is \n\n {goal.question} \n\n and the visualization code is \n\n {code} \n\n. Now, evaluate the code based on the 6 dimensions above. \n. THE SCORE YOU ASSIGN MUST BE MEANINGFUL AND BACKED BY CLEAR RATIONALE. A SCORE OF 1 IS POOR AND A SCORE OF 10 IS VERY GOOD. The structured evaluation is below ."},
         ]
 

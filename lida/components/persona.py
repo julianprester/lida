@@ -32,7 +32,7 @@ class PersonaExplorer():
 
         messages = [
             {"role": "system", "content": system_prompt},
-            {"role": "assistant", "content": user_prompt},
+            {"role": "user", "content": user_prompt},
         ]
 
         result = text_gen.generate(messages=messages, config=textgen_config)

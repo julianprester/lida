@@ -97,7 +97,7 @@ class Summarizer():
 
         messages = [
             {"role": "system", "content": system_prompt},
-            {"role": "assistant", "content": f"""
+            {"role": "user", "content": f"""
         Annotate the dictionary below. Only return a JSON object.
         {base_summary}
         """},

@@ -44,7 +44,7 @@ class GoalExplorer():
 
         messages = [
             {"role": "system", "content": SYSTEM_INSTRUCTIONS},
-            {"role": "assistant",
+            {"role": "user",
              "content":
              f"{user_prompt}\n\n {FORMAT_INSTRUCTIONS} \n\n. The generated {n} goals are: \n "}]
 
